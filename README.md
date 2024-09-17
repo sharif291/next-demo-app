@@ -1,1 +1,1 @@
-# hairbox.store
+# This is a next demo app that has various components to showcase
