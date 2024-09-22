@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div id="home">
-      <div className='coming-soon'>
+      <div className='coming-soon flex justify-center'>
         <video width="w-full" controls={false} autoPlay muted loop>
           <source src="/videos/coming-soon.mp4" type="video/mp4" />
           Your browser does not support the video tag.

@@ -1,8 +1,4 @@
-import { NextResponse } from "next/server";
+// middleware.js
+export { default } from "next-auth/middleware"
 
-export function middleware(request) {
-    return NextResponse.next()
-}
-
-export const config = {
-}
+export const config = { matcher: ["/articles/create"] }

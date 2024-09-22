@@ -10,7 +10,7 @@ export default function ArticlesList({ articles }) {
                 <li key={articlesItem.id}>
                     <Link href={`/articles/${articlesItem.slug}`}>
                         <CustomImage img={articlesItem.image}></CustomImage>
-                        <span>{articlesItem.title}</span>
+                        <span>{articlesItem.title} -by <span className=" capitalize">{articlesItem.creatorName || "Unknown"}</span></span>
                     </Link>
                 </li>
             )) : "No content available."

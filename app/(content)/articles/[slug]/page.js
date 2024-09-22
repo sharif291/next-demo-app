@@ -13,7 +13,7 @@ export default async function ArticlesDetailsPage({ params }) {
       <arrticle className="articles-article">
         <header>
           <Link href={`/articles/${articlesItem.slug}/image`}><img src={articlesItem.image.includes("http") ? articlesItem.image : `/images/${articlesItem.image}`} alt={articlesItem.title} /></Link>
-          <h1>{articlesItem.title}</h1>
+          <h1>{articlesItem.title} -by <span className=" capitalize">{articlesItem.creatorName || "Unknown"}</span></h1>
           <time dateTime={articlesItem.date}>{articlesItem.date}</time>
         </header>
         <p dangerouslySetInnerHTML={{

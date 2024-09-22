@@ -35,7 +35,7 @@ export default function CreateArticlePage() {
                         <label htmlFor="image">Image URL</label>
                         <input type="text" id="image" name="image" required />
                     </p>
-                    <p className={classes.actions}>
+                    <p className={`${classes.actions} mt-4`}>
                         <ArticleFormSubmit />
                     </p>
                 </form>
